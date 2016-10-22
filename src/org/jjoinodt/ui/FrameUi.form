@@ -199,6 +199,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Add File"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addFBtnActionPerformed"/>
+              </Events>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new StandardButton(&quot;&quot;, Theme.GLOSSY_MULTILIGHTORANGE_THEME, ButtonType.BUTTON_ROUNDED_RECTANGLUR)"/>
               </AuxValues>

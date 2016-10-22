@@ -157,6 +157,11 @@ public class FrameUi extends javax.swing.JFrame {
 
         addFBtn.setFont(new java.awt.Font("Liberation Sans", 0, 12)); // NOI18N
         addFBtn.setText("Add File");
+        addFBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addFBtnActionPerformed(evt);
+            }
+        });
 
         addFoBtn.setFont(new java.awt.Font("Liberation Sans", 0, 12)); // NOI18N
         addFoBtn.setText("Add Folder");
@@ -243,10 +248,6 @@ public class FrameUi extends javax.swing.JFrame {
                 .addContainerGap(27, Short.MAX_VALUE))
         );
 
-        jDesktopPane1.setLayer(jPanel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jPanel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jPanel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
         javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
         jDesktopPane1.setLayout(jDesktopPane1Layout);
         jDesktopPane1Layout.setHorizontalGroup(
@@ -264,6 +265,9 @@ public class FrameUi extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
+        jDesktopPane1.setLayer(jPanel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jPanel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jPanel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -278,6 +282,11 @@ public class FrameUi extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void addFBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addFBtnActionPerformed
+        // TODO add your handling code here:
+        pickFile();
+    }//GEN-LAST:event_addFBtnActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
